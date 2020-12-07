@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginPage">
+
+    <ImageView
+        android:id="@+id/loginBoxBgL1"
+        android:layout_width="339dp"
+        android:layout_height="491dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/_0564d" />
+
+    <ImageView
+        android:id="@+id/loginBoxBgL2"
+        android:layout_width="339dp"
+        android:layout_height="455dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginBoxBgL1"
+        app:layout_constraintEnd_toEndOf="@+id/loginBoxBgL1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginBoxBgL1"
+        app:layout_constraintTop_toTopOf="@+id/loginBoxBgL1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/_0897b" />
+
+    <TextView
+        android:id="@+id/loginHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/login"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/loginBoxBgL2"
+        app:layout_constraintStart_toStartOf="@+id/loginBoxBgL2"
+        app:layout_constraintTop_toTopOf="@+id/loginBoxBgL2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/email"
+        android:textColor="#969696"
+        app:layout_constraintEnd_toEndOf="@+id/loginBoxBgL2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginBoxBgL2"
+        app:layout_constraintTop_toBottomOf="@+id/loginHeader" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword4"
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/passwd"
+        android:textColor="#969696"
+        app:layout_constraintEnd_toEndOf="@+id/loginBoxBgL2"
+        app:layout_constraintStart_toStartOf="@+id/loginBoxBgL2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="78dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="@+id/loginBoxBgL2"
+        app:layout_constraintEnd_toEndOf="@+id/loginBoxBgL2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/loginBoxBgL2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword4"
+        app:layout_constraintVertical_bias="0.808" />
+</androidx.constraintlayout.widget.ConstraintLayout>
