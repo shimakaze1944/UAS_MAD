@@ -5,4 +5,5 @@
     <string name="email">Email</string>
     <string name="fname">Full Name</string>
     <string name="passwd">Password</string>
+    <string name="logout">Logout</string>
 </resources>
